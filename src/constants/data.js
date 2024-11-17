@@ -71,46 +71,47 @@ const features = [
 const testimonials = [
     {
         id: 19,
-        name: "Marie Jordan",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        name: "Marie Johnson",
+        text: "This platform has helped me diversify my investments and make informed decisions. The insights are invaluable!",
         image: images.customer_img_1,
         rating: 3
     },
     {
         id: 20,
-        name: "Ann Brown",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        name: "Annabelle Brown",
+        text: "Thanks to this platform, I’ve successfully grown my portfolio with minimal risk. Highly recommend to anyone looking to invest wisely.",
         image: images.customer_img_2,
         rating: 5
     },
     {
         id: 21,
-        name: "Andrew Bill",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        name: "Andrew Miller",
+        text: "The tools and resources provided have been instrumental in making strategic investment moves. Still learning, but I’m optimistic.",
         image: images.customer_img_3,
         rating: 2
     },
     {
         id: 22,
-        name: "Jason Stawer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        name: "Jason Stewart",
+        text: "I’ve seen consistent returns on my investments after using this platform. It’s user-friendly and highly effective.",
         image: images.customer_img_4,
         rating: 4
     },
     {
         id: 23,
-        name: "Lisa Green",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        name: "Lisa Greenfield",
+        text: "A great resource for anyone looking to secure their financial future. I’m excited to see my investment grow over time.",
         image: images.customer_img_5,
         rating: 2
     },
     {
         id: 24,
-        name: "Anna Doe",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        name: "Anna Williams",
+        text: "This platform has empowered me to take control of my investments with confidence. I’m seeing the benefits already!",
         image: images.customer_img_6,
         rating: 4
     }
+    
 ]
 
 const sections = {services, about, qualities, features, testimonials};

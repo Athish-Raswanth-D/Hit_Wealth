@@ -22,7 +22,7 @@ const Testimonials = () => {
             <div className='testimonials-content'>
                 <div className='section-t text-center'>
                     <h3>Customer Testimonials</h3>
-                    <p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias voluptatum, tempore dignissimos perferendis ea.</p>
+                    <p className='text'>These are the feedbacks from our satisfied customers, sharing their positive experiences and highlighting the value of our product/service.</p>
                 </div>
 
                 <div className='item-list grid text-white text-center'>
