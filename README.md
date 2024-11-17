@@ -31,6 +31,10 @@
 - **Utilities**: JavaScript (ES6+)
 
 ---
+Here’s a screenshot of the Hit Wealth platform:
+
+![Hit Wealth Screenshot](![Screenshot 2024-11-17 223318](https://github.com/user-attachments/assets/17e3099d-afd0-4440-895e-2b1b38792f82)
+)
 
 ## Installation
 
