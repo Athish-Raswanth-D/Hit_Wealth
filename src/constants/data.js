@@ -1,0 +1,118 @@
+import images from "./images";
+import {FaRocket, FaDesktop, FaFileAlt} from "react-icons/fa";
+import {BiDollarCircle} from "react-icons/bi";
+import {AiOutlineReload} from "react-icons/ai";
+
+const gradient = "url(#blue-gradient)" ;
+
+const services = [
+    {
+        id: 1,
+        icon: <FaDesktop style = {{ fill: gradient }} />,
+        title: "Investment Learning",
+        text: "Empower your financial journey with investment insights and learning tools."
+    },
+    {
+        id: 2,
+        icon: <BiDollarCircle style = {{ fill: gradient }} />,
+        title: "Stock news",
+        text: "Stay updated with real-time stock news and market trends."
+    },
+    {
+        id: 3,
+        icon: <FaRocket style = {{ fill: gradient }} />,
+        title: "Practice Play",
+        text: "Test your skills with interactive investment simulations."
+    },
+
+];
+
+const about = [
+    {
+        id: 7,
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus leo et diam fermentum ullamcorper. Nulla venenatis nibh sollicitudin tincidunt gravida. Nam convallis justo et ligula luctus suscipit. Etiam eu nisi turpis. Donec sollicitudin accumsan quam, rhoncus sagittis metus semper quis. Praesent convallis mauris sed ipsum lobortis facilisis. Nulla cursus sem non nunc sagittis, a volutpat mauris lobortis. Nulla ut feugiat tellus. Nam dictum nisi nec scelerisque auctor"
+    }
+]
+
+const qualities = [
+    {
+        id: 8,
+        icon: <FaFileAlt style = {{ fill: gradient }} />,
+        title: "Ideas & Plans",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod."
+    },
+    {
+        id: 9,
+        icon: <AiOutlineReload style = {{ fill: gradient }}  />,
+        title: "Prompt Strategies",
+        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod."
+    }
+];
+
+const features = [
+    {
+        id: 10,
+        title: "Investment Learning",
+        text: "Investment Learning is designed to empower users at every level of their financial journey. Through an array of resources such as detailed guides, video tutorials, expert podcasts, and insightful articles, you'll gain a solid foundation in investing principles and strategies. The platform also provides interactive tools and quizzes to reinforce your understanding, making complex topics approachable and engaging. Whether you're a beginner or an experienced investor, our resources are tailored to help you make informed and confident decisions in the stock market."
+    
+    },    
+    {
+        id: 11,
+        title: "Stock news",
+        text: "Stay ahead in the fast-paced world of stock markets with our comprehensive Stock News section. This feature provides real-time news updates, market trends, and in-depth analyses to keep you informed of the latest developments. With personalized news feeds, you'll have instant access to relevant financial information and expert opinions on stocks, companies, and industries. By staying informed, you can seize opportunities and respond to market shifts with greater confidence, making this your go-to hub for staying on top of the investment world."
+    },
+    {
+        id: 12,
+        title: "Practice Play",
+        text: "Practice Play offers a safe, engaging environment for honing your investment skills through simulations and virtual trading. Here, you can test strategies and learn from your successes and mistakes without any financial risk. Whether you're experimenting with day trading, portfolio diversification, or long-term investing, our simulated market provides real-world scenarios that mirror current stock trends. Perfect for beginners looking to build confidence or experienced traders wanting to try new tactics, Practice Play is a fun and educational tool to prepare you for real-market decisions."
+    },
+];
+
+const testimonials = [
+    {
+        id: 19,
+        name: "Marie Jordan",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        image: images.customer_img_1,
+        rating: 3
+    },
+    {
+        id: 20,
+        name: "Ann Brown",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        image: images.customer_img_2,
+        rating: 5
+    },
+    {
+        id: 21,
+        name: "Andrew Bill",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        image: images.customer_img_3,
+        rating: 2
+    },
+    {
+        id: 22,
+        name: "Jason Stawer",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        image: images.customer_img_4,
+        rating: 4
+    },
+    {
+        id: 23,
+        name: "Lisa Green",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        image: images.customer_img_5,
+        rating: 2
+    },
+    {
+        id: 24,
+        name: "Anna Doe",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        image: images.customer_img_6,
+        rating: 4
+    }
+]
+
+const sections = {services, about, qualities, features, testimonials};
+
+export default sections;
