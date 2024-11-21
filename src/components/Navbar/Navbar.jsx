@@ -1,15 +1,13 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import "./Navbar.css";
 import {IoMdRocket} from "react-icons/io";
-
 const Navbar = () => {
-
     const [navToggle, setNavToggle] = useState(false);
+    const navigate=useNavigate();
     const navHandler = () => {
         setNavToggle(prevData => !prevData);
     }
-
   return (
     <nav className='navbar w-100 flex'>
         <div className='container w-100'>
@@ -40,7 +38,7 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <div className='navbar-btns'>
-                            <button type = "button" className='btn'><IoMdRocket /> <span>get started</span></button>
+                            <button type = "button" className='btn'><IoMdRocket /><span>get started</span></button>
                         </div>
                     </div>
                 </div>

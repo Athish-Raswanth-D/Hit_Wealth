@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const SingleService = ({service}) => {
   const navigate = useNavigate();
   const handleservice = () => {
-    navigate("/Learning");
+    navigate(service.url);
   };
   return (
     <div className='item bg-dark translate-effect'>

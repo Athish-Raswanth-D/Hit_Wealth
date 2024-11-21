@@ -10,19 +10,22 @@ const services = [
         id: 1,
         icon: <FaDesktop style = {{ fill: gradient }} />,
         title: "Investment Learning",
-        text: "Empower your financial journey with investment insights and learning tools."
+        text: "Empower your financial journey with investment insights and learning tools.",
+        url: "/Learning"
     },
     {
         id: 2,
         icon: <BiDollarCircle style = {{ fill: gradient }} />,
         title: "Stock news",
-        text: "Stay updated with real-time stock news and market trends."
+        text: "Stay updated with real-time stock news and market trends.",
+        url:"/stocknews"
     },
     {
         id: 3,
         icon: <FaRocket style = {{ fill: gradient }} />,
         title: "Practice Play",
-        text: "Test your skills with interactive investment simulations."
+        text: "Test your skills with interactive investment simulations.",
+        url:"/practiceplay"
     },
 
 ];

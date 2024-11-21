@@ -9,6 +9,7 @@ import {
 import About from './components/About/About';
 import Learning from './components/Learning/Learning';
 import Stocks from './components/Stocks/Stocks';
+import Stocknews from './components/Stocknews/Stocknews';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,7 @@ root.render(
       <Route path = "/about" element = {<About/>}></Route>
       <Route path = "/Learning" element = {<Learning/>}></Route>
       <Route path="/stocks" element={<Stocks/>} />
-
+      <Route path="/stocknews" element={<Stocknews/>} />
     </Routes>
   </BrowserRouter>
 );
