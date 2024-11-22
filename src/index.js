@@ -10,12 +10,14 @@ import About from './components/About/About';
 import Learning from './components/Learning/Learning';
 import Stocks from './components/Stocks/Stocks';
 import Stocknews from './components/Stocknews/Stocknews';
+import Login from './components/login/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path = "/" element = {<App />}></Route>
+      <Route path = "/login" element = {<Login />}></Route>
       <Route path = "/about" element = {<About/>}></Route>
       <Route path = "/Learning" element = {<Learning/>}></Route>
       <Route path="/stocks" element={<Stocks/>} />

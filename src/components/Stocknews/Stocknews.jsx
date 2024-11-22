@@ -14,8 +14,8 @@ const Stocknews = () => {
         "feedMode": "all_symbols",
         "isTransparent": false,
         "displayMode": "regular",
-        "width": 400,
-        "height": 550,
+        "width": "100%",
+        "height": "100%",
         "colorTheme": "dark",
         "locale": "en"
       });

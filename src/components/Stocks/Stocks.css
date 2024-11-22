@@ -1,0 +1,19 @@
+.tradingview-widget-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .tradingview-widget-container__widget {
+    margin: 0 auto;
+  }
+  
+  .tradingview-widget-copyright {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  .blue-text {
+    color: #55b3d5;
+  }
+  

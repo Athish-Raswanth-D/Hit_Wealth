@@ -1,85 +1,66 @@
-/* Global Styles */
-body {
-    background-color: black;
-    font-family: Arial, sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+.login-wrapper {
+  background-image: url('/src/assets/images/Financial\ Investment\ indicators\ with\ texts\ copy\ space\ in\ high\ contrast\ concept.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-wrapper .form-container {
   
-  /* Container for form */
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Form container */
-  .form-container {
-    background-color: violet;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  /* Common Form Styles */
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  input {
-    width: 80%;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-    color: black;
-  }
-  
-  button {
-    width: 80%;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    border: none;
-    background-color: darkviolet;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: violet;
-  }
-  
-  .toggle-link {
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .toggle-link:hover {
-    color: lightgray;
-  }
-  
-  /* Login Form Styles */
-  .login-form input {
-    background-color: #fff;
-  }
-  
-  /* Sign Up Form Styles */
-  .signup-form input {
-    background-color: #fff;
-  }
-  
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-wrapper input {
+  width: 80%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: black;
+}
+
+.login-wrapper button {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  background-color: darkviolet;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-wrapper button:hover {
+  background-color: violet;
+}
+
+.login-wrapper .toggle-link {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-wrapper .toggle-link:hover {
+  color: lightgray;
+}

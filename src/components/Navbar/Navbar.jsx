@@ -8,6 +8,9 @@ const Navbar = () => {
     const navHandler = () => {
         setNavToggle(prevData => !prevData);
     }
+    const handleGetstarted = () => {
+        navigate("/login");
+    };
   return (
     <nav className='navbar w-100 flex'>
         <div className='container w-100'>
@@ -31,14 +34,14 @@ const Navbar = () => {
                                 <Link to = "/Stocks">Stocks</Link>
                             </li>
                             <li className='text-white'>
-                                <Link to = "/">Details</Link>
+                                <Link to = "/">Profile</Link>
                             </li>
                             <li className='text-white'>
                                 <Link to = "/">Contacts</Link>
                             </li>
                         </ul>
                         <div className='navbar-btns'>
-                            <button type = "button" className='btn'><IoMdRocket /><span>get started</span></button>
+                            <button type = "button" className='btn' onClick={handleGetstarted}><IoMdRocket /><span>get started</span></button>
                         </div>
                     </div>
                 </div>
