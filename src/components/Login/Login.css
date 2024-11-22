@@ -14,7 +14,7 @@
 }
 
 .login-wrapper .form-container {
-  
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -44,7 +44,7 @@
   margin: 1rem 0;
   border-radius: 5px;
   border: none;
-  background-color: darkviolet;
+  background-color: var(--clr-robin-blue);
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -52,7 +52,9 @@
 }
 
 .login-wrapper button:hover {
-  background-color: violet;
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--clr-robin-blue);
 }
 
 .login-wrapper .toggle-link {
