@@ -9,8 +9,9 @@ import {
 import About from './components/About/About';
 import Learning from './components/Learning/Learning';
 import Stocks from './components/Stocks/Stocks';
-import Stocknews from './components/Stocknews/Stocknews';
+import Stocknews from './components/Stocknews/NewsComponent';
 import Login from './components/login/Login';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
       <Route path = "/Learning" element = {<Learning/>}></Route>
       <Route path="/stocks" element={<Stocks/>} />
       <Route path="/stocknews" element={<Stocknews/>} />
+      <Route path="/dashboard" element={<Dashboard/>} />
     </Routes>
   </BrowserRouter>
 );

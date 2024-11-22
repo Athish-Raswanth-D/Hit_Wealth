@@ -34,7 +34,7 @@ const Navbar = () => {
                                 <Link to = "/Stocks">Stocks</Link>
                             </li>
                             <li className='text-white'>
-                                <Link to = "/">Profile</Link>
+                                <Link to = "/Dashboard">Dashboard</Link>
                             </li>
                             <li className='text-white'>
                                 <Link to = "/">Contacts</Link>
