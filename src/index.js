@@ -9,9 +9,10 @@ import {
 import About from './components/About/About';
 import Learning from './components/Learning/Learning';
 import Stocks from './components/Stocks/Stocks';
-import Stocknews from './components/Stocknews/NewsComponent';
+import Stocknews from './components/Stocknews/Stocknews.jsx';
 import Login from './components/login/Login';
 import Dashboard from './components/Dashboard/Dashboard';
+import MutualFunds from './components/Mutualfunds/Mutualfunds';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
       <Route path="/stocks" element={<Stocks/>} />
       <Route path="/stocknews" element={<Stocknews/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="/dashboard" element={<MutualFunds/>} />
     </Routes>
   </BrowserRouter>
 );

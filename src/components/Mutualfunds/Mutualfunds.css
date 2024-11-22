@@ -1,0 +1,120 @@
+/* Wrapper Styles */
+.mutual-funds-wrapper {
+    display: flex;
+    font-family: Arial, sans-serif;
+    max-width: 1200px; /* Centered container with a maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+    height: 100vh;
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text */
+  }
+  
+  /* Scrollable Funds List */
+  .funds-list {
+    flex: 1; /* Take up 1/3 of the space */
+    border-right: 1px solid #444; /* Subtle separator */
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100%; /* Allow scrolling for long lists */
+    background-color: #222; /* Dark gray background for list */
+  }
+  
+  .funds-list h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Fund Item Styles */
+  .fund-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Subtle border */
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #333; /* Medium gray */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .fund-item:hover, 
+  .fund-item.selected {
+    background-color: #1e88e5; /* Highlight color (blue) */
+    color: #fff; /* White text when selected */
+  }
+  
+  /* Fund Details Section */
+  .fund-details {
+    flex: 2; /* Take up 2/3 of the space */
+    padding: 30px;
+    background-color: #121212; /* Very dark gray */
+    color: #fff;
+  }
+  
+  /* Investment Inputs */
+  .investment-inputs label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .investment-inputs input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #000; /* Black text */
+    background-color: #fff; /* White background */
+  }
+  
+  /* Returns Section */
+  .returns {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4caf50; /* Green for positive returns */
+  }
+  
+  /* Action Buttons */
+  .action-buttons button {
+    padding: 15px 30px; /* Comfortable padding */
+    margin: 10px 10px 0 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff; /* White text */
+  }
+  
+  .invest-button {
+    background-color: #4caf50; /* Green for investment */
+  }
+  
+  .invest-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
+  
+  .redeem-button {
+    background-color: #f44336; /* Red for redemption */
+  }
+  
+  .redeem-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mutual-funds-wrapper {
+      flex-direction: column; /* Stack the sections vertically */
+    }
+  
+    .funds-list {
+      max-height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  
