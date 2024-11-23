@@ -11,6 +11,9 @@ const Navbar = () => {
     const handleGetstarted = () => {
         navigate("/login");
     };
+    const handleMutualFunds = () => {
+        navigate("/mutualfunds");
+    };
   return (
     <nav className='navbar w-100 flex'>
         <div className='container w-100'>
@@ -37,7 +40,7 @@ const Navbar = () => {
                                 <Link to = "/Dashboard">Dashboard</Link>
                             </li>
                             <li className='text-white'>
-                                <Link to = "/MutualFunds">Mutual Funds</Link>
+                                <Link to = "/MutualFunds" onClick={handleMutualFunds}>Mutual Funds</Link>
                             </li>
                         </ul>
                         <div className='navbar-btns'>
