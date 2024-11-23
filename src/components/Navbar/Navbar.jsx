@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <Link to = "/Dashboard">Dashboard</Link>
                             </li>
                             <li className='text-white'>
-                                <Link to = "/MutualFunds" onClick={handleMutualFunds}>Mutual Funds</Link>
+                                <Link to = "/MutualFunds" onClick={handleMutualFunds}>MFI</Link>
                             </li>
                         </ul>
                         <div className='navbar-btns'>
