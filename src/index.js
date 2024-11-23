@@ -10,8 +10,8 @@ import About from './components/About/About';
 import Learning from './components/Learning/Learning';
 import Stocks from './components/Stocks/Stocks';
 import Stocknews from './components/Stocknews/NewsComponent';
-import Login from './components/login/Login';
-import Dashboard from './components/Dashboard/Dashboard';
+import Login from './components/login/Login.jsx';
+import Dashboard from './components/Dashboard/Dashboard.jsx';
 import MutualFunds from './components/Mutualfunds/Mutualfunds';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

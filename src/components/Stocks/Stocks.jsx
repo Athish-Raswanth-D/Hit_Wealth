@@ -4,8 +4,6 @@ import './Stocks.css'; // Assuming the CSS is saved in App.css
 const StockTradingApp = () => {
   const [selectedStock, setSelectedStock] = useState(null);
   const [quantities, setQuantities] = useState({}); // Store quantity for each selected stock
-
-  // Stock data (mock data)
   const stocks = [
     { name: 'Google', details: 'Alphabet Inc. - NASDAQ: GOOGL', price: '2850.50', change: '1.8' },
     { name: 'Amazon', details: 'Amazon.com Inc. - NASDAQ: AMZN', price: '3512.75', change: '-0.5' },
