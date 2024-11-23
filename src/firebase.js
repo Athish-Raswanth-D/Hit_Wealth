@@ -1,7 +1,9 @@
-// Import necessary functions from Firebase SDK
+// firebase.js
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc } from "firebase/firestore";
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCsnlG-_pYuhlqXUdDHmvHeGhXFxc23eDY",
   authDomain: "hitwealth-bd009.firebaseapp.com",
@@ -21,4 +23,4 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 // Export necessary Firestore functions for CRUD operations
-export { db, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc };
+export { app, db, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc };
