@@ -10,7 +10,7 @@ import About from './components/About/About';
 import Learning from './components/Learning/Learning';
 import Stocks from './components/Stocks/Stocks';
 import Stocknews from './components/Stocknews/NewsComponent';
-import Login from './components/login/Login.jsx';
+import Login from './components/login/Login';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import MutualFunds from './components/Mutualfunds/Mutualfunds';
 
