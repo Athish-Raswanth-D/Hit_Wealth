@@ -18,7 +18,7 @@ const About = () => {
 
 With a focus on integrity, trust, and growth, we empower our clients to make informed financial decisions and achieve their wealth goals.
 
-Let us help you make your wealth.</p>
+Let us help you make your.</p>
                 </div>
             </div>
         </div>
