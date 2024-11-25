@@ -25,7 +25,7 @@ const services = [
         icon: <FaRocket style = {{ fill: gradient }} />,
         title: "Practice Play",
         text: "Test your skills with interactive investment simulations.",
-        url:"/practiceplay"
+        url:"/live trading"
     },
 
 ];

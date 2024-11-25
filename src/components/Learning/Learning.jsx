@@ -1,13 +1,52 @@
 import React from 'react';
 import './Learning.css';
 
+const InvestmentLearning = () => {
+  return (
+    <div className="learning-container">
+      <div className="sidebar">
+        <h2>Investment Topics</h2>
+        <ul>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#techniques">Techniques</a></li>
+          <li><a href="#types">Types of Investments</a></li>
+          <li><a href="#risks">Understanding Risks</a></li>
+          <li><a href="#tips">Tips for Beginners</a></li>
+        </ul>
+      </div>
+      <div className="content">
+        <section id="intro">
+          <h1>Introduction</h1>
+          <p>Investing is the process of putting your money to work to earn a profit. Learn the basics to get started.</p>
+        </section>
+        <section id="techniques">
+          <h1>Investment Techniques</h1>
+          <p>Explore methods like dollar-cost averaging, value investing, and growth investing to maximize returns.</p>
+        </section>
+        <section id="types">
+          <h1>Types of Investments</h1>
+          <p>Common types include stocks, bonds, mutual funds, real estate, and ETFs.</p>
+        </section>
+        <section id="risks">
+          <h1>Understanding Risks</h1>
+          <p>Each investment comes with risks. Learn how to manage and mitigate them effectively.</p>
+        </section>
+        <section id="tips">
+          <h1>Tips for Beginners</h1>
+          <p>Start early, diversify, and invest regularly to build a solid portfolio over time.</p>
+        </section>
+      </div>
+    </div>
+  );
+};
+
 const Learning = () => {
   const learningData = [
     {
       type: 'book',
       title: 'A Beginner Guide to the Stock Market: Everything You Need to Start Making Money Today ',
       thumbnail: 'https://m.media-amazon.com/images/I/51+4sWWykDL._SL500_.jpg',
-      link: 'https://www.amazon.in/Beginners-Guide-Stock-Market-Everything/dp/1099617200/ref=asc_df_1099617200/?tag=googleshopdes-21&linkCode=df0&hvadid=709980573291&hvpos=&hvnetw=g&hvrand=1595007883557850786&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9183535&hvtargid=pla-758779901676&psc=1&mcid=44a6f1d165bf39b3866b1116fb266788&gad_source=1',
+      link: 'https://www.amazon.in/Beginners-Guide-Stock-Market-Everything/dp/1099617200',
     },
     {
       type: 'book',
@@ -73,4 +112,13 @@ const Learning = () => {
   );
 };
 
-export default Learning;
+const InvestmentAndLearning = () => {
+  return (
+    <div>
+      <InvestmentLearning />
+      <Learning />
+    </div>
+  );
+};
+
+export default InvestmentAndLearning;

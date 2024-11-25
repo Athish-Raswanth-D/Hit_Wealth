@@ -1,6 +1,7 @@
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/Bg\ image.jpeg") center/cover no-repeat;
+    background-color: rgb(0, 0, 0);
+
 }
 .header-content .text-lead{
     margin: 3.2rem 0 4.9rem 0;

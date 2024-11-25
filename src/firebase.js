@@ -1,7 +1,7 @@
-// firebase.js
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc } from "firebase/firestore";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -18,9 +18,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-// Initialize Firestore
 const db = getFirestore(app);
 
-// Export necessary Firestore functions for CRUD operations
-export { app, db, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc };
+// Initialize Auth
+const auth = getAuth(app);
+
+// Export necessary Firebase functions
+export { app, db, auth, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc, createUserWithEmailAndPassword, signInWithEmailAndPassword };
