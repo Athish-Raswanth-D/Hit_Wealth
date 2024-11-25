@@ -1,65 +1,80 @@
-.profile-settings {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #fff;
-    background-color: #0e0e0e;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #008cdd;
-    margin-bottom: 20px;
-  }
-  
-  .settings-card {
-    background-color: #1a1a1a;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-  }
-  
-  .settings-card h2 {
-    margin-bottom: 10px;
-    color: #008cdd;
-  }
-  
-  .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
-  }
-  
-  .info label {
-    color: #bbb;
-  }
-  
-  .info input[type="text"],
-  .info input[type="email"],
-  .info input[type="tel"],
-  .info button,
-  .info input[type="checkbox"] {
-    background: #333;
-    border: 1px solid #555;
-    padding: 8px;
-    border-radius: 5px;
-    color: #fff;
-  }
-  
-  .info button {
-    cursor: pointer;
-  }
-  
-  button.danger {
-    background-color: #ff4d4f;
-    border: none;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button.danger:hover {
-    background-color: #ff6b6d;
-  }
+.new-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+.new-settings-card {
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-settings-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.new-info {
+  margin-bottom: 15px;
+}
+
+.new-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f1f1f1;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.new-input,
+.new-textarea,
+.new-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+}
+
+.new-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.profile-image {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.new-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.new-button:disabled {
+  background-color: #444;
+}
+
+.new-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}

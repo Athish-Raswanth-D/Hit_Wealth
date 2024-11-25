@@ -1,14 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom'; 
 import Navbar from '../Navbar/Navbar';
 import "./Header.css";
 import { FaPaperPlane } from "react-icons/fa";
 
 const Header = () => {
-  const navigate = useNavigate(); // Hook for programmatic navigation
+  const navigate = useNavigate();
 
   const handleGetStarted = () => {
-    navigate('/login'); // Navigate to the Login page
+    navigate('/login');
   };
 
   return (
@@ -24,7 +24,7 @@ const Header = () => {
           </p>
           <button
             className='btn header-btn btn-blue'
-            onClick={handleGetStarted} // Attach event handler for navigation
+            onClick={handleGetStarted} 
           >
             <FaPaperPlane /> <span>Get Started</span>
           </button>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../firebase'; // Adjust the import path based on your file structure
+import { auth } from '../../firebase'; 
 import './Login.css';
 
 class Login extends Component {
@@ -35,11 +35,11 @@ class Login extends Component {
 
     try {
       if (isLogin) {
-        // Firebase login
+       
         await signInWithEmailAndPassword(auth, username, password);
         alert(`Welcome back ${username}`);
       } else {
-        // Firebase sign-up
+       
         await createUserWithEmailAndPassword(auth, username, password);
         alert(`Account created for: ${username}`);
       }

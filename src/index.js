@@ -13,6 +13,7 @@ import Stocknews from './components/Stocknews/NewsComponent';
 import Login from './components/login/Login';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import MutualFunds from './components/Mutualfunds/Mutualfunds';
+import Livetrading from './components/Livetrading.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -25,6 +26,7 @@ root.render(
       <Route path="/stocknews" element={<Stocknews/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
       <Route path="/mutualfunds" element={<MutualFunds/>} />
+      <Route path="/livetrading" element={<Livetrading/>} />
     </Routes>
   </BrowserRouter>
 );

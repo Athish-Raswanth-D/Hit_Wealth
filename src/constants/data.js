@@ -1,5 +1,5 @@
 import images from "./images";
-import {FaRocket, FaDesktop, FaFileAlt} from "react-icons/fa";
+import {FaChartLine, FaDesktop, FaFileAlt} from "react-icons/fa";
 import {BiDollarCircle} from "react-icons/bi";
 import {AiOutlineReload} from "react-icons/ai";
 
@@ -22,10 +22,10 @@ const services = [
     },
     {
         id: 3,
-        icon: <FaRocket style = {{ fill: gradient }} />,
-        title: "Practice Play",
-        text: "Test your skills with interactive investment simulations.",
-        url:"/live trading"
+        icon: <FaChartLine style = {{ fill: gradient }} />,
+        title: "Live Trading",
+        text: "Live trading lets you seize market opportunities instantly, maximizing profits while managing risks in real time.",
+        url:"/livetrading"
     },
 
 ];
@@ -66,8 +66,8 @@ const features = [
     },
     {
         id: 12,
-        title: "Practice Play",
-        text: "Practice Play offers a safe, engaging environment for honing your investment skills through simulations and virtual trading. Here, you can test strategies and learn from your successes and mistakes without any financial risk. Whether you're experimenting with day trading, portfolio diversification, or long-term investing, our simulated market provides real-world scenarios that mirror current stock trends. Perfect for beginners looking to build confidence or experienced traders wanting to try new tactics, Practice Play is a fun and educational tool to prepare you for real-market decisions."
+        title: "Live Trading",
+        text: "Live trading involves executing real-time buy and sell orders in the financial markets. Traders make decisions based on up-to-date market data, including price movements, trends, and news. It requires quick execution, risk management, and strategy to capitalize on market opportunities."
     },
 ];
 
