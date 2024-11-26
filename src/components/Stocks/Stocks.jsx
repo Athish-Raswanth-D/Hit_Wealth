@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Stocks.css'; // Assuming the CSS is saved in App.css
+import './Stocks.css';
 
 const StockTradingApp = () => {
   const [selectedStock, setSelectedStock] = useState(null);
-  const [quantities, setQuantities] = useState({}); // Store quantity for each selected stock
+  const [quantities, setQuantities] = useState({});
   const stocks = [
     { name: 'Google', details: 'Alphabet Inc. - NASDAQ: GOOGL', price: '2850.50', change: '1.8' },
     { name: 'Amazon', details: 'Amazon.com Inc. - NASDAQ: AMZN', price: '3512.75', change: '-0.5' },
@@ -58,7 +58,7 @@ const StockTradingApp = () => {
   const handleSelectStock = (stock) => {
     setSelectedStock(stock);
     if (!quantities[stock.name]) {
-      setQuantities((prev) => ({ ...prev, [stock.name]: 1 })); // Initialize quantity to 1 if it's not set
+      setQuantities((prev) => ({ ...prev, [stock.name]: 1 })); 
     }
   };
 

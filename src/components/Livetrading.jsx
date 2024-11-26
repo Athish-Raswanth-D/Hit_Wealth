@@ -1,16 +1,17 @@
-import React, { useEffect, useRef, memo } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-function Livetrading() {
-  const container = useRef();
+function TradingViewWidget() {
+  const containerRef = useRef();
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
-    script.type = "text/javascript";
+    const script = document.createElement('script');
+    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+    script.type = 'text/javascript';
     script.async = true;
     script.innerHTML = `
       {
-        "autosize": true,
+        "width": "100%",
+        "height": "100%",
         "symbol": "NASDAQ:AAPL",
         "interval": "D",
         "timezone": "Etc/UTC",
@@ -20,33 +21,49 @@ function Livetrading() {
         "allow_symbol_change": true,
         "calendar": false,
         "support_host": "https://www.tradingview.com"
-      }`;
-    container.current.appendChild(script);
+      }
+    `;
+    containerRef.current.appendChild(script);
   }, []);
 
   return (
     <div
-      ref={container}
+      className="tradingview-widget-container"
+      ref={containerRef}
       style={{
-        position: 'fixed', // Keeps the widget in a fixed position
+        position: 'fixed',
         top: 0,
         left: 0,
-        width: '100vw', // Takes full viewport width
-        height: '100vh', // Takes full viewport height
-        margin: 0,
-        padding: 0,
-        zIndex: 999, // Keeps the widget on top of other content
+        width: '100vw',
+        height: '100vh',
+        zIndex: 9999,
+        backgroundColor: 'black',
       }}
     >
       <div
         className="tradingview-widget-container__widget"
-        style={{
-          width: '100%',
-          height: '100%',
-        }}
+        style={{ width: '100%', height: '100%' }}
       ></div>
+      <div
+        className="tradingview-widget-copyright"
+        style={{
+          position: 'absolute',
+          bottom: 10,
+          left: 10,
+          fontSize: '12px',
+          color: '#999',
+        }}
+      >
+        <a
+          href="https://www.tradingview.com/"
+          rel="noopener nofollow"
+          target="_blank"
+          style={{ textDecoration: 'none', color: '#1E90FF' }}
+        >
+        </a>
+      </div>
     </div>
   );
 }
 
-export default memo(Livetrading);
+export default TradingViewWidget;

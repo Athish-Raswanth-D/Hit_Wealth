@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './Mutualfunds.css'; // Assuming you have a CSS file for styling
+import './Mutualfunds.css';
 
 const MutualFunds = () => {
   const [selectedFund, setSelectedFund] = useState(null);
   const [investmentAmount, setInvestmentAmount] = useState('');
-  const [duration, setDuration] = useState('1'); // Investment duration in years
+  const [duration, setDuration] = useState('1');
 
   const mutualFunds = [
     { 

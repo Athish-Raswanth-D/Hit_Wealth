@@ -2,8 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc } from "firebase/firestore";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCsnlG-_pYuhlqXUdDHmvHeGhXFxc23eDY",
   authDomain: "hitwealth-bd009.firebaseapp.com",
@@ -14,14 +12,8 @@ const firebaseConfig = {
   appId: "1:553605351435:web:fd8d10a1f3d8ce0bbf1f0e",
   measurementId: "G-JEVXF0QH7N"
 };
-
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
-
-// Initialize Auth
 const auth = getAuth(app);
-
-// Export necessary Firebase functions
 export { app, db, auth, collection, addDoc, getDoc, setDoc, updateDoc, deleteDoc, doc, createUserWithEmailAndPassword, signInWithEmailAndPassword };
